@@ -1,0 +1,9 @@
+/* añade una sombra a las imágenes de los productos */
+main img{
+    box-shadow: 5px 5px 25px black;
+}
+
+/* hace que en la vista de impresión se supriman la cabecera y el pie */
+header, footer{
+    display: none;
+}
