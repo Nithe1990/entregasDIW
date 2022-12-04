@@ -1,0 +1,169 @@
+html{
+    /* 1 */
+    background-color: lightgray;
+    /* 2 */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 4 */
+main p{
+    color: darkgray;
+}
+
+/* 3 */
+.cabecera{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* 5 */
+.rojo{
+    font-weight: bold;
+    color: red;
+}
+
+/* 6 */
+.subrayado{
+    background-color: yellow;
+}
+
+/* 7 */
+.botonesRojos{
+    color: white;
+    background-color: red;
+}
+
+/* 8 */
+nav li{
+    list-style-type: none;
+    background-color: blue;
+    border: solid 1px black;
+    border-collapse: collapse;
+    
+}
+li>a{
+    text-decoration: none;
+    color: white;
+}
+li:hover{
+    background-color: white;
+    
+}
+li:hover>a{
+    text-decoration: underline;
+    color: blue;
+}
+.fondoCyan{
+    background-color: cyan;
+}
+
+/* 10 */
+.otros a{
+    color: blueviolet;
+}
+
+/* 12 */
+article{
+    background-color: white;
+    border-right: solid darkgray 5px;
+    border-bottom: solid darkgray 5px;
+    padding: 10px;
+    margin: 20px;
+    flex: 30%;
+}
+
+/* hace que los artículos se vean distribuídos los unos al lado de los otros */
+main section{
+    display: flex;
+}
+
+
+/* hace que el aside y el main se vean el uno al lado del otro */
+body>div{
+    display: flex;
+}
+
+/* 13 */
+footer{
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+}
+
+/* 14 */
+footer>section{
+    background-color: lightgray;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 5px;
+    justify-content: space-evenly;
+}
+
+/* ajusta el tamaño del logotipo y lo encuadra en un rectángulo blanco */
+header>img{
+    inline-size: 20%;
+    background-color: white;
+    border: 5px solid white;
+}
+
+/* ajusta el main y el aside a su padre */
+main{
+    flex: 70%;
+}
+aside{
+    flex: 30%;
+}
+
+/* coloca los elementos en la cabecera y ajusta tamaños*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#busqueda{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+}
+#busqueda>input{
+    flex-basis: 80%;
+    margin-right: 3px;
+}
+
+/* coloca los componentes del formulario */
+fieldset{
+    display: flex;
+}
+fieldset>div{
+    display: flex;
+    flex-direction: column;
+}
+.derecha{
+    flex: content;
+}
+fieldset>div>*{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px){
+    /* hace que el aside y el main se vean el uno debajo del otro */
+    body>div{
+        flex-direction: column;
+    }
+
+    /* hace que los artículos se vean distribuídos los unos debajo de los otros */
+    main section{
+        flex-direction: column;
+    }
+
+    /* hace que las secciones del footer se vean las unas debajo de las otras */
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer>section{
+        width: 90%;
+    }
+}

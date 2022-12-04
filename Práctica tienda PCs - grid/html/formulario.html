@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon-16x16.png">
+    <link rel="manifest" href="../otros/site.webmanifest">
+    <title>Página web</title>
+</head>
+<body>
+    <header>
+        <img src="../imgs/logotipo.png" alt="logotipo">
+        <div id="busqueda">
+            <input type="search" name="" id="" placeholder="Artículo a buscar">
+            <button>&#x1F50D;</button>
+        </div>
+        <div>
+            <button class="botonesRojos">Login</button>
+            <button class="botonesRojos">Carrito</button>
+        </div>
+    </header>
+    <hr/>
+    <div>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Index</a></li>
+                    <li class="fondoCyan"><a href="#">Formulario</a></li>
+                    <li><a href="#">Hardware</a></li>
+                    <li><a href="#">Software</a></li>
+                    <li><a href="#">Otros</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <form action="formulario.html" method="get">
+                <fieldset>
+                    <legend>Información del artículo</legend>
+                    <div>
+                        <label for="articulo">Artículo*</label>
+                        <label for="descripcion">Descripción*</label>
+                    </div>
+                    <div class="derecha">
+                        <input type="text" name="articulo" id="">
+                        <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Clasificación del artículo</legend>
+                    <div>
+                        <label for="destacado">Marcar como destacado</label>
+                        <label for="">Hardware</label>
+                        <label for="">Software</label>
+                        <label for="">Servicios</label>
+                        <label for="subcategorias">Subcategorías</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="destacado" id="">
+                        <input type="radio" name="categoria" id="" value="hardware">
+                        <input type="radio" name="categoria" id="" value="software">
+                        <input type="radio" name="categoria" id="" value="servicios">
+                        <select name="subcategorias" id="">
+                            <option value="componentes">Componentes</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar" class="botonesRojos">
+                <input type="reset" value="Limpiar" class="botonesRojos">
+            </form>
+        </main>
+    </div>
+</body>
+</html>

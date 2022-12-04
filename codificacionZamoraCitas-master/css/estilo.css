@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header>img{
+    inline-size: 200px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: dimgray;
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+}
+
+nav>a:hover{
+    color: blue;
+}

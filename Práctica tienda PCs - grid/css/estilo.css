@@ -1,0 +1,175 @@
+html{
+    /* 1 */
+    background-color: lightgray;
+    /* 2 */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 4 */
+main p{
+    color: darkgray;
+}
+
+/* 3 */
+.cabecera{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* 5 */
+.rojo{
+    font-weight: bold;
+    color: red;
+}
+
+/* 6 */
+.subrayado{
+    background-color: yellow;
+}
+
+/* 7 */
+.botonesRojos{
+    color: white;
+    background-color: red;
+}
+
+/* 8 */
+nav li{
+    list-style-type: none;
+    background-color: blue;
+    border: solid 1px black;
+    border-collapse: collapse;
+    
+}
+li>a{
+    text-decoration: none;
+    color: white;
+}
+li:hover{
+    background-color: white;
+}
+li:hover>a{
+    text-decoration: underline;
+    color: blue;
+}
+.fondoCyan{
+    background-color: cyan;
+}
+
+/* 10 */
+.otros a{
+    color: blueviolet;
+}
+
+/* 12 */
+article{
+    background-color: white;
+    border-right: solid darkgray 5px;
+    border-bottom: solid darkgray 5px;
+    padding: 10px;
+    margin: 20px;
+    flex: 30%;
+}
+
+/* 13 */
+footer{
+    background-color: darkslategray;
+}
+
+/* 14 */
+footer>section{
+    background-color: lightgray;
+    border: solid black 1px;
+    margin: 5px;
+    justify-content: space-evenly;
+}
+
+/* ajusta el tamaño del logotipo y lo encuadra en un rectángulo blanco */
+header>img{
+    background-color: white;
+    border: 5px solid white;
+}
+
+/* coloca los elementos en la cabecera y ajusta tamaños*/
+header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+#busqueda{
+    display: grid;
+    grid-template-columns: 85% auto;
+    justify-content: space-around;
+}
+#busqueda+div{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+/* coloca los componentes del formulario */
+fieldset{
+    display: flex;
+}
+fieldset>div{
+    display: flex;
+    flex-direction: column;
+}
+.derecha{
+    flex: content;
+}
+fieldset>div>*{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 600px){
+    /* hace que el nav y el main se vean el uno al lado del otro */
+    body>div{
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    /* hace que las secciones se vean la una encima de la otra */
+    main{
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    /* hace que la línea que separa las secciones del main se muestre correctamente */
+    main>hr{
+        width: 100%;
+    }
+
+    /* hace que los artículos de cada sección se vean los unos al lado de los otros */
+    main>section{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    /* hace que las secciones del footer se vean los unos al lado de los otros */
+    footer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    /* hace que los elementos de las secciones del footer se vean las unas debajo de las otras, y los justifica a la izquierda */
+    footer>section{
+        display: grid;
+        justify-content: left;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    header>img{
+        margin-left: 20%;
+    }
+
+    #busqueda+div{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+}
