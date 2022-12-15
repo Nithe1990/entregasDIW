@@ -1,0 +1,9 @@
+/* hace que en la vista de impresión se supriman la cabecera y el pie */
+/* añade una sombra a las imágenes de losprodictos */
+main img{
+    box-shadow: 5px 5px 25px black;
+}
+
+header, footer{
+    display: none;
+}
