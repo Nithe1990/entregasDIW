@@ -18,5 +18,5 @@ nav>a{
 }
 
 nav>a:hover{
-    color: blue;
+    text-shadow: 0 0 4px green, 0 0 4px green;
 }
