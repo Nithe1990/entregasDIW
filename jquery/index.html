@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+    $("#ocultaClick").click(function(){
+        $(this).hide();
+    });
+
+    $("#ocultaDobleClick").dblclick(function(){
+        $(this).hide();
+    });
+
+    $("#mouse").mouseenter(function(){
+        $(this).css("backgroud-color", "#0000ff");
+    });
+
+    $("#mouse").mouseleave(function(){
+        $(this).css("background-color", "#00ff00");
+    });
+
+    $("#tamano").resize(function(){
+        $(this).css("background-color", "yellow");
+    })
+
+    $("#tecla").keypress(function(){
+        $(this).css("background-color", "yellow");
+    })
+});
+    </script> -->
+</head>
+<body>
+    <main>
+        <section id="ocultaClick">
+            <span>Esta sección se oculta al hacerle click.</span>
+        </section>
+        <section id="ocultaDobleClick">
+            <span>Esta sección se oculta al hacerle doble click.</span>
+        </section>
+        <section id="mouse">
+            <span>Esta sección cambia su color de fondo cuando el cursor entra y sale de ella</span>
+        </section>
+        <section id="tamano">
+            <span>Esta sección cambia su color de fondo cuando se redimensiona la ventana</span>
+        </section>
+        <section id="tecla">
+            <span>Esta sección cambia su color de fondo cuando se pulsa una tecla</span>
+        </section>
+        <img src="c.jpg" alt="" width="50" height="50" id="imagen1">
+        <section id="tresSegundos">
+            <span>Esta sección se oculta en tres segundos al hacerle click.</span>
+        </section>
+        <img src="c.jpg" alt="" width="50" height="50" id="imagen2">
+        <section>
+            <img src="c.jpg" alt="" width="50" height="50" id="imagen3" hidden>
+            <button>Mostrar imagen</button>
+        </section>
+        <nav>
+            <section>
+                1
+                <article>1.1</article>
+                <article>1.2</article>
+                <article>1.3</article>
+            </section>
+            <section>
+                2
+                <article>2.1</article>
+                <article>2.2</article>
+                <article>2.3</article>
+            </section>
+            <section>
+                3
+                <article>3.1</article>
+                <article>3.2</article>
+                <article>3.3</article>
+            </section>
+            <section>
+                4
+                <article>4.1</article>
+                <article>4.2</article>
+                <article>4.3</article>
+            </section>
+        </nav>
+    </main>
+    <script src="funciones.js"></script>
+</body>
+</html>
