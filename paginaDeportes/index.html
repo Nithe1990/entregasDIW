@@ -8,10 +8,11 @@
   <title>Tienda de deportes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">    
 </head>
 
-<body>
-  <header class="container bg-dark row">
+<body class="container">
+  <header class="container-fluid bg-dark row">
     <section class="col-2">
       <img src="logo.jpg" class="rounded-circle" alt="logo">
     </section>
@@ -20,28 +21,43 @@
         <input type="text" class="form-control">
       </div>
       <div class="col-1">
-        <button type="button" class="btn"><img src="lupa.jpg" class="rounded-circle float-end" alt="buscar"></button>
+        <button type="button" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
       </div>
     </section>
     <section class="col-2">
-      <img src="hombre.jpg" class="rounded-circle float-end" alt="login">
-      <img src="carrito.jpg" class="rounded-circle float-end" alt="carrito">
+      <button type="button" class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+      </button>
+      <button type="button" class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-person" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+        </svg>
+      </button>
     </section>
   </header>
+
+  <nav class="navbar bg-secondary navbar-expand container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">Enlace 1</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Enlace 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Enlace 3</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Enlace 4</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Enlace 5</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Enlace 6</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Enlace 7</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Enlace 8</a></li>
+    </ul>
+  </nav>
+  
   <main class="container">
-    <nav class="navbar bg-secondary navbar-expand">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">Enlace 1</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Enlace 2</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Enlace 3</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Enlace 4</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Enlace 5</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Enlace 6</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Enlace 7</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Enlace 8</a></li>
-      </ul>
-    </nav>
     <section>
+      <h1>Imágenes</h1>
       <div id="carrusel" class="carousel slide" data-bs-ride="true">
         <!-- botones inferiores del carrusel, para indicar los Slides -->
         <div class="carousel-indicators">
@@ -55,15 +71,15 @@
 
         <!-- páginas del carrusel -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <article class="carousel-item active">
             <img src="balon.jpg" class="d-block w-70" alt="balón">
-          </div>
-          <div class="carousel-item">
+          </article>
+          <article class="carousel-item">
             <img src="deportivas.jpg" class="d-block w-70" alt="deportivas">
-          </div>
-          <div class="carousel-item">
+          </article>
+          <article class="carousel-item">
             <img src="pesas.jpg" class="d-block w-70" alt="pesas">
-          </div>
+          </article>
         </div>
 
         <!-- botones atrás y adelante del carrusel -->
@@ -77,10 +93,106 @@
         </button>
       </div>
     </section>
+
     <section>
-      
+      <h1>Deportes</h1>
+      <div id="carrusel2" class="carousel slide" data-bs-ride="true">
+        <!-- botones inferiores del carrusel, para indicar los Slides -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="0" class="active bg-dark"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="1" aria-label="Slide 2"
+            class="bg-dark"></button>
+          <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="2" aria-label="Slide 3"
+            class="bg-dark"></button>
+        </div>
+
+        <!-- páginas del carrusel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <article class="card col" style="width:400px">
+                <img class="card-img-top" src="gymnastics.jpg" alt="gimnasia">
+                <div class="card-body">
+                  <h4 class="card-title">Gimnasia</h4>
+                </div>
+              </article>
+              <article class="card col" style="width:400px">
+                <img class="card-img-top" src="handball.jpg" alt="balonmano">
+                <div class="card-body">
+                  <h4 class="card-title">Balonmano</h4>
+                </div>
+              </article>
+              <article class="card col" style="width:400px">
+                <img class="card-img-top" src="lucha.jpg" alt="lucha">
+                <div class="card-body">
+                  <h4 class="card-title">Lucha</h4>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <article class="card col" style="width:400px">
+                <img class="card-img-top" src="gymnastics.jpg" alt="gimnasia">
+                <div class="card-body">
+                  <h4 class="card-title">Gimnasia</h4>
+                </div>
+              </article>
+              <article class="card col" style="width:400px">
+                <img class="card-img-top" src="handball.jpg" alt="balonmano">
+                <div class="card-body">
+                  <h4 class="card-title">Balonmano</h4>
+                </div>
+              </article>
+              <article class="card col" style="width:400px">
+                <img class="card-img-top" src="lucha.jpg" alt="lucha">
+                <div class="card-body">
+                  <h4 class="card-title">Lucha</h4>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <article class="card col" style="width:400px">
+                <img class="card-img-top" src="gymnastics.jpg" alt="gimnasia">
+                <div class="card-body">
+                  <h4 class="card-title">Gimnasia</h4>
+                </div>
+              </article>
+              <article class="card col" style="width:400px">
+                <img class="card-img-top" src="handball.jpg" alt="balonmano">
+                <div class="card-body">
+                  <h4 class="card-title">Balonmano</h4>
+                </div>
+              </article>
+              <article class="card col" style="width:400px">
+                <img class="card-img-top" src="lucha.jpg" alt="lucha">
+                <div class="card-body">
+                  <h4 class="card-title">Lucha</h4>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- botones atrás y adelante del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrusel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
+
     <section class="row">
+      <h1>Productos</h1>
       <article class="card col" style="width:400px">
         <img class="card-img-top" src="balon.jpg" alt="balón">
         <div class="card-body">
@@ -106,12 +218,12 @@
   </main>
   <footer class="container bg-dark row">
     <section class="col-6">
-      <div class="accordion" id="acordeonPie">
+      <div class="accordion row" id="acordeonPie">
         <!-- primer elemento -->
-        <div class="accordion-item">
+        <div class="accordion-item bg-dark col">
           <h2 class="accordion-header" id="cabeceraUno">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#cuerpoUno" aria-expanded="false" aria-controls="cuerpoUno">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#cuerpoUno" aria-expanded="true" aria-controls="cuerpoUno">
               Ayuda
             </button>
           </h2>
@@ -130,10 +242,10 @@
           </div>
         </div>
         <!-- segundo elemento -->
-        <div class="accordion-item">
+        <div class="accordion-item bg-dark col">
           <h2 class="accordion-header" id="cabeceraDos">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#cuerpoDos" aria-expanded="false" aria-controls="cuerpoDos">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#cuerpoDos" aria-expanded="true" aria-controls="cuerpoDos">
               A cerca de
             </button>
           </h2>
@@ -150,10 +262,10 @@
           </div>
         </div>
         <!-- tercer elemento -->
-        <div class="accordion-item">
+        <div class="accordion-item bg-dark col">
           <h2 class="accordion-header" id="cabeceraTres">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#cuerpoTes" aria-expanded="false" aria-controls="cuerpoTres">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#cuerpoTres" aria-expanded="true" aria-controls="cuerpoTres">
               Únete a nosotros
             </button>
           </h2>
@@ -176,8 +288,12 @@
       <img src="facebook.png" alt="Facebook">
       <img src="youtube.png" alt="You Tube">
       <img src="instagram.png" alt="Instagram">
+
     </section>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
