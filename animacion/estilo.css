@@ -1,0 +1,13 @@
+#porteria{
+    width: 160px;
+    height: 90px;
+    border: solid black 2px;
+}
+
+#espacio{
+    height: 250px;
+}
+
+#balon{
+    position: absolute;
+}
