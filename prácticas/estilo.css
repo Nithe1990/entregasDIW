@@ -1,0 +1,36 @@
+header{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header:first-child{
+    grid-column: 1/1;
+}
+
+header>svg{
+    grid-column: 2/2;
+}
+
+nav{
+    display: flex;
+    background-color: aqua;
+    justify-content: space-evenly;
+}
+
+nav>a:hover{
+    background-color: grey;
+    border: solid black 1px;
+    font-weight: bold;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#panel{
+    display: none;
+    background-color: aqua;
+}

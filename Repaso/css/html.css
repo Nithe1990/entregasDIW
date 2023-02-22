@@ -1,0 +1,9 @@
+p, pre{
+    display: inline;
+}
+
+td, th{
+    border: solid black 1px;
+    text-align: center;
+    border-collapse: collapse;
+}

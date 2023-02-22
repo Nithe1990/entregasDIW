@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cabecera.css">
+    <link rel="stylesheet" href="../css/html.css">
+    <title>HTML Formularios</title>
+</head>
+<body class="container-fluid">
+    <header class="d-flex text-center">
+        <a href="../index.html"><img src="../recursos/logo.png" alt="logo" class="rounded-circle bg-light ms-3" height="64" width="64"></a>
+        <h1 class="col-10">Formularios en HTML</h1>
+    </header>
+    <main>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Leyenda del fieldset</legend>
+                <label for="txtTexto">Input text</label>
+                <input type="text" name="" id="txtTexto" required>
+                <label for="txtContrasena">Input password</label>
+                <input type="password" id="txtContrasena">
+                <label for="btnColor">input color</label>
+                <input type="color" id="btnColor">
+                <label for="btnBoton1">Input button</label>
+                <input type="button" value="Botón">
+                <br/>
+                <label for="calendario">Calendario</label>
+                <input type="datetime-local" id="calendario">
+                <label for="chkCheckbox">Input checkbox</label>
+                <input type="checkbox" id="chkCheckbox">
+                <label for="btnFichero">Input file</label>
+                <input type="file" id="btnFichero">
+                <label for="spnNumero">Input number</label>
+                <input type="number" id="spnId" step="2" min="0">
+                <br/>
+                <label for="rd1">Input radio 1</label>
+                <input type="radio" name="btnGrp" id="rd1">
+                <label for="rd2">radio 2</label>
+                <input type="radio" name="btnGrp" id="rd2">
+                <label for="slSlider">Input range</label>
+                <input type="range" id="slSlider" min="0" max="10" step="2">
+                <label for="txtArea">Textarea</label>
+                <textarea id="txtArea" cols="30" rows="10" placeholder="Area de texto"></textarea>
+                <label for="cbCombo">Combobox</label>
+                <select id="cbCombo">
+                    <option value="Uno">Primera opción</option>
+                    <option value="Dos">Segunda opción</option>
+                </select>
+                <br/>
+                <label for="btnBoton2">Botón</label>
+                <button>Botón</button>
+                <label for="btnReset">Input reset</label>
+                <input type="reset" value="Limpiar formulario">
+                <label for="btnSubmit">Input submit</label>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
